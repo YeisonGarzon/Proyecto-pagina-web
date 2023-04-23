@@ -92,6 +92,6 @@ nav > ul > li > a:hover{
 }
 .perfil > button:hover{
     transform: scale(1.2);
-    background: linear-gradient(white, rgb(48, 45, 45));
+    background: linear-gradient(white, rgb(44, 44, 163));
     color: rgb(255, 255, 255);
 }
