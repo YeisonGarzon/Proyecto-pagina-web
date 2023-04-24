@@ -12,7 +12,6 @@ body{
 /* HEADER SUPERIOR */
 .header_superior{
     font-family: sans-serif;
-    margin-top: 2px;
 }
 
 /* Edición de logo */
@@ -35,10 +34,6 @@ h2{
 li{
     list-style: none;
 }
-
-li a{
-
-}  
 
 nav{
     display: flex;
@@ -65,9 +60,17 @@ nav > ul > li > a{
     transition: all 400ms ease;
 }
 nav > ul > li > a:hover{
-    transform: scale(1.2);
+    transform: scale(1);
     background: linear-gradient(blue, rgb(3, 3, 99)) ;
-    box-shadow: 0px 0px 9px 0px black;
+    box-shadow: 0px -2px 9px 0px black;
+}
+.caret_abajo{
+    width: 8px;
+    margin-left: 5px;
+}
+.usuario{
+    width: 13px;
+    margin-left: 5px;
 }
 
 /* PERFIL INICIO DE SESION Y RESGITRARTE */
@@ -76,7 +79,7 @@ nav > ul > li > a:hover{
     align-items: center;
 }
 .perfil > button{
-    padding: 11px;
+    padding: 11px 12px;
     margin: 8.5px;
     text-transform: uppercase;
     border: none;
@@ -110,16 +113,28 @@ nav ul li ul{
     box-shadow: 3px 2px 8px black;
     position: relative;
     top: 18px;
-    *visibility: hidden;
-    *opacity: 0;
+    visibility: hidden;
+    opacity: 0;
     z-index: 10;
-    transition: all 100ms ease;
+    transition: all 200ms ease;
 }
 nav ul li:hover ul{
     visibility: visible;
     opacity: 1;
-    top: -4px;
+    top: 0px;
 }
+nav ul li ul:before{
+    content: "";
+    width: 0;
+    height: 0;
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+    border-bottom: 12px solid blue;
+    position: absolute;
+    top: -12px;
+    left: 20px;
+}
+
 nav ul li ul li{
     padding-left: 16px;
 }
@@ -129,4 +144,8 @@ nav ul li ul li a{
     height: 60px;
     display: flex;
     align-items: center;
+    transition: all 400ms ease;
+}
+nav ul li ul li a:hover{
+    transform: scale(1.1);
 }
