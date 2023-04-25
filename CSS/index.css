@@ -63,6 +63,7 @@ nav > ul > li > a:hover{
     transform: scale(1);
     background: linear-gradient(blue, rgb(3, 3, 99)) ;
     box-shadow: 0px -2px 9px 0px black;
+    border-radius: 6px;
 }
 .caret_abajo{
     width: 8px;
@@ -106,22 +107,23 @@ hr{
 }
 nav ul li ul{
     width: 20px px;
+    height: 0px;
     display: flex;
     flex-direction: column;
     border-radius: 8px;
     background: linear-gradient(blue, rgb(3, 3, 99));
     box-shadow: 3px 2px 8px black;
     position: relative;
-    top: 18px;
     visibility: hidden;
     opacity: 0;
     z-index: 10;
-    transition: all 200ms ease;
+    
 }
 nav ul li:hover ul{
     visibility: visible;
     opacity: 1;
-    top: 0px;
+    height: 248px;
+    transition: all 200ms ease-in;
 }
 nav ul li ul:before{
     content: "";
@@ -144,8 +146,8 @@ nav ul li ul li a{
     height: 60px;
     display: flex;
     align-items: center;
-    transition: all 400ms ease;
+    transition: all 300ms ease;
 }
 nav ul li ul li a:hover{
-    transform: scale(1.1);
+    padding-left: 14px;
 }
