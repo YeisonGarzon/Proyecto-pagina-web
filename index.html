@@ -13,9 +13,9 @@
         <div class="header_superior">
             
             <div class="container_menu">
-                <nav>
+                <nav id="nav">
                     <h2><a class="logo-sup" href=""></a>LOGO</h2>
-                    <ul>
+                    <ul class="menu_ul" id="menu_ul">
                         <li><a href="">Inicio</a></li>
                         <li><a href="">Portafolio <img class="caret_abajo" src="./img/iconos/caret-abajo.png" alt=""></a>
                             <ul>
@@ -33,13 +33,18 @@
                         <button type="button" href="">Iniciar sesion<img class="usuario" src="./img/iconos/usuario.png" alt=""></button>
                         <button type="button" href="">Registrarse</button>
                     </div>
+                    <div id="barra_menu">
+                        <input type="checkbox" class="checkbox" id="checkbox" />
+                            <label for="checkbox">
+                                <img id="icono_menu" src="./img/iconos/lista menu cel.png" alt="">
+                            </label>
+                        </div>
+                    
                 </nav>
             </div>
         </div>
     </header>
 </body>
-</html>
 
-<div class="logo">
-    
-</div>
+    <script src="./JavaScript/menu.js"></script>
+</html>
