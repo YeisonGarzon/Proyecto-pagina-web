@@ -5,20 +5,46 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="CSS/index.css">
+    <link rel="stylesheet" href="./CSS/resposive.css">
 </head>
 <body>
-    <header id="menu">
-        <a href=""><img src="" alt=""></a>
-        <ul>
-            <li><a href="">Inicio</a></li>
-            <li><a href="">Portafolio</a></li>
-            <li><a href="">Acerca De</a></li>
-            <li><a href="">Precio</a></li>
-            <li><a href="">contacto</a></li>
-            <br>
-            <li><a href="">Iniciar sesion</a></li>
-            <li><a href="">Registrarte</a></li>
-        </ul>
+    <header>
+        <div class="header_superior">
+            
+            <div class="container_menu">
+                <nav id="nav">
+                    <h2><a class="logo-sup" href=""></a>LOGO</h2>
+                    <ul class="menu_ul" id="menu_ul">
+                        <li><a href="">Inicio</a></li>
+                        <li><a href="">Portafolio <img class="caret_abajo" src="./img/iconos/caret-abajo.png" alt=""></a>
+                            <ul>
+                                <li><a href="">HTML</a></li> <hr>
+                                <li><a href="">CSS</a></li> <hr>
+                                <li><a href="">JavaScript</a></li> <hr>
+                                <li><a href="">Git y GitHub</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="">Acerca De</a></li>
+                        <li><a href="">Precio</a></li>
+                        <li><a href="">contacto</a></li>
+                    </ul>
+                    <div class="perfil">
+                        <button type="button" href="">Iniciar sesion<img class="usuario" src="./img/iconos/usuario.png" alt=""></button>
+                        <button type="button" href="">Registrarse</button>
+                    </div>
+                    <div id="barra_menu">
+                        <input type="checkbox" class="checkbox" id="checkbox" />
+                            <label for="checkbox">
+                                <img id="icono_menu" src="./img/iconos/lista menu cel.png" alt="">
+                            </label>
+                        </div>
+                    
+                </nav>
+            </div>
+        </div>
     </header>
 </body>
+
+    <script src="./JavaScript/menu.js"></script>
 </html>

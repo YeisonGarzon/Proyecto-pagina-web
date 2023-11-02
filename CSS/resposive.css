@@ -1,0 +1,304 @@
+@media(max-width: 1112px){
+   h2{
+        font-size: 24px;
+        display: flex;
+        padding: 20px;
+    }
+    .container_menu{
+        width: 100%;
+        height: 60px;
+        padding: 0px 20px;
+    }
+    nav{
+        display: flex;
+        justify-content: space-between;
+        height: 100%;
+    }
+    nav > #menu_ul > li > a{
+        width: 100%;
+        height: 100%;
+        padding: 25px;
+        font-size: 15px;
+    }
+    .caret_abajo{
+        width: 8px;
+        margin-left:6px;
+    }
+    .usuario{
+        width: 13px;
+        margin-left: 5px;
+    }
+    .perfil > button{
+        display: flex;
+        align-items: center;
+        padding: 11px 12px;
+        margin: 8.5px;
+        font-size: 15px;
+    }
+    nav ul li:hover ul{
+        height: 248px;
+        background: linear-gradient(blue, rgb(3, 3, 99)) ;
+    }
+    nav ul li ul li a{
+        height: 60px;
+        font-size: 15px;
+    }
+}
+
+@media(max-width: 1107px){
+    h2{
+        font-size: 20px;
+        display: flex;
+        padding: 10px;
+    }
+    .container_menu{
+        width: 100%;
+        height: 50px;
+        padding: 0px 20px;
+    }
+    nav{
+        display: flex;
+        justify-content: space-between;
+        height: 100%;
+    }
+    nav > #menu_ul > li > a{
+        width: 100%;
+        height: 100%;
+        padding: 17px;
+        font-size: 13px;
+        
+    }
+    nav > #menu_ul > li > a:hover{
+        transition: all 0ms ease;
+    }
+    .caret_abajo{
+        width: 7px;
+        margin-left:7px;
+    }
+    .usuario{
+        width: 13px;
+        margin-left: 6px;
+    }
+    .perfil > button{
+        display: flex;
+        align-items: center;
+        padding: 9px 9px;
+        margin: 8.5px;
+        font-size: 13px;
+    }
+    nav ul li:hover ul{
+        height: 190px;
+        background: linear-gradient(blue, rgb(3, 3, 99));
+        transition: all 0ms ease-in;
+    }
+    nav ul li ul li a{
+        height: 45px;
+        font-size: 13px;
+    }
+}
+
+@media(max-width: 900px){
+    h2{
+        font-size: 18px;
+        display: flex;
+        padding: 10px;
+    }
+    .container_menu{
+        width: 100%;
+        height: 45px;
+        padding: 0px 20px;
+    }
+    nav{
+        display: flex;
+        justify-content: space-between;
+        height: 100%;
+    }
+    nav > #menu_ul > li > a{
+        width: 100%;
+        height: 100%;
+        padding: 9px;
+        font-size: 12px;
+        
+    }
+    nav > #menu_ul > li > a:hover{
+        transition: all 0ms ease;
+    }
+    .caret_abajo{
+        width: 7px;
+        margin-left:6px;
+    }
+    .usuario{
+        width: 13px;
+        margin-left: 5px;
+    }
+    .perfil > button{
+        display: flex;
+        align-items: center;
+        padding: 9px 9px;
+        margin: 8.5px;
+        font-size: 10px;
+    }
+    nav ul li:hover ul{
+        height: 190px;
+        background: linear-gradient(blue, rgb(3, 3, 99));
+        transition: all 0ms ease-in;
+    }
+    nav ul li ul li a{
+        height: 45px;
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 750px){
+    .container_menu{
+        position: fixed;
+        width: 100%;
+        height: 45px;
+        padding: 0px 20px;
+        background: linear-gradient(blue, rgb(21, 21, 116));
+    }
+    
+    li{
+        list-style: none;
+    }
+    
+    nav{
+        height: 100%;
+        display: flex;
+        justify-content: space-between; 
+    }
+    .menu_ul{
+        top: 45px;
+        position: fixed;
+        height: 70%;
+        width: 0%;
+        left: 0px;
+        background: linear-gradient(blue, rgb(21, 21, 116));
+        overflow: hidden;
+        box-shadow: 2px 0px 10px 0px black;
+        display: flex;
+        flex-direction: column;
+        overflow-y: auto;
+    }
+    .menu_ul-show{
+        width: 40%;
+    }
+
+    
+    nav > .menu_ul > li{
+        height: 50px;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        
+    }
+    nav > .menu_ul > li > a{
+        width: 100%;
+        height: 100%;
+        padding: 10px;
+        display: flex;
+        align-items: center;
+       justify-content: center;
+        color: white;
+        text-transform: uppercase;
+        font-size: 13px;
+    }
+    nav > .menu_ul > li > a:hover{
+        transition: all 300ms ease;
+        transform: scale(1);
+        background: linear-gradient(blue, rgb(3, 3, 99)) ;
+        box-shadow: 0px 1px 10px 2px rgb(3, 3, 99);
+        border-radius: 6px;
+    }
+    .menu_menu_ul{
+        width: 40%;
+    }
+    .caret_abajo{
+        width: 8px;
+        margin-left:6px;
+    }
+    .usuario{
+        width: 10px;
+        margin-left: 5px;
+    }
+    input{
+        display: none;
+    }
+    #barra_menu{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    label, #icono_menu{
+        width: 24px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+
+    /* SUB MENU */
+hr{
+    border: 1px solid rgb(172, 172, 172);
+    margin: 0px 14px;
+}
+nav ul li ul{
+    left: 40%;
+    width: 20px px;
+    height: 0px;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+    background: linear-gradient(blue, rgb(3, 3, 99));
+    box-shadow: 2px 0px 10px 0px black;
+    visibility: hidden;
+    opacity: 0;
+    z-index: 10;
+}
+nav ul li:hover ul{
+    visibility: visible;
+    opacity: 1;
+    height: 248px;
+    transition: all 200ms ease-in;
+}
+nav ul li ul:before{
+    content: "";
+    width: 0;
+    height: 0;
+    border-bottom: 12px solid transparent;
+    border-top: 12px solid transparent;
+    border-right: 12px solid rgb(0, 0, 255);
+    position: absolute;
+    top: 10px;
+    left: -24px;
+}
+
+nav ul li ul li{
+    padding-left: 16px;
+}
+
+nav ul li ul li a{
+    color: rgb(255, 255, 255);
+    width: 105px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    transition: all 300ms ease;
+}
+nav ul li ul li a:hover{
+    padding-left: 14px;
+}
+    .icono_menu img{
+        display: block;
+        position: relative;
+        cursor: pointer;
+
+    } 
+
+    .icono_menu2 img{
+        display: block;
+        position: relative;
+    }
+}
